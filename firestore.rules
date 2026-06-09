@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users own their own data
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Price history - readable by any authenticated user
+    match /price_history/{component} {
+      allow read: if request.auth != null;
+
+      match /snapshots/{snapshot} {
+        allow read: if request.auth != null;
+      }
+    }
+
+    // Alerts - readable by any authenticated user
+    match /alerts/{alert} {
+      allow read: if request.auth != null;
+    }
+
+    // Deny everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

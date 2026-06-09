@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "694631864901",
+    "project_id": "pc-builder-comparison",
+    "storage_bucket": "pc-builder-comparison.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694631864901:android:e05e05a8cf5c33c648212c",
+        "android_client_info": {
+          "package_name": "com.example.pcbuildercomparison"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694631864901-tm18nov8ubskemr9550bajuj39cbdh2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKapZKW4D_aa2snxteOwASFUdDtDC9JyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694631864901-tm18nov8ubskemr9550bajuj39cbdh2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

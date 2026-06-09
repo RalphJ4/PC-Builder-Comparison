@@ -1,0 +1,30 @@
+{
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs18"
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "pc-builder-comparison",
+          "appId": "1:694631864901:android:e05e05a8cf5c33c648212c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "pc-builder-comparison",
+          "configurations": {
+            "android": "1:694631864901:android:e05e05a8cf5c33c648212c",
+            "ios": "1:694631864901:ios:cd6c0e3b9887b4be48212c",
+            "web": "1:694631864901:web:8b9bbcc20d95e4cb48212c"
+          }
+        }
+      }
+    }
+  }
+}
